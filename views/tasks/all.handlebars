@@ -1,0 +1,17 @@
+<h1>Veja todos os produtos</h1>
+<link rel="stylesheet" href="/css/style.css">
+<div class="products">
+    {{#each products}}
+       <div class="product-container">
+        {{this._id}}
+        <p><span>Produto:</span> {{this.name.name}}</p>
+        <p><span>Descrição:</span> {{this.name.description}}</p>
+        <p><span>R$: </span>{{this.name.price}}</p>
+        <p><span>Quantidade:</span> {{this.name.quantity}}</p>
+        <img src="{{this.name.image}}" alt="{{this.name.image}}">
+        <a href="/listaprodutos/{{this._id}}">Detalhes</a>
+       </div>
+        
+    {{/each}}
+
+</div>

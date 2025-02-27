@@ -1,0 +1,21 @@
+<h1>Cadastre o seu Produto</h1>
+<link rel="stylesheet" href="/css/create.css">
+<div class="form-control">
+    <form action="/create" method="POST">
+        <label for="name">Produto:</label>
+        <input type="text" name="name" id="name" placeholder="Produto">
+        
+        <label for="price">Preço:</label>
+        <input type="text" name="price" id="price" placeholder="R$">
+
+        <label for="description">Descrição:</label>
+        <input type="text" name="description" id="description" placeholder="Descrição">
+
+        <label for="quantity">Quantidade:</label>
+        <input type="number" name="quantity" id="quantity" placeholder="quantitade">
+
+        <label for="image">Image do Produto</label>
+        <input type="file" name="image" id="image">
+        <button>Cadastrar</button>
+    </form>
+</div>
